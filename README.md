@@ -1,21 +1,15 @@
-# Код Java находящийся в этом репозитории
-
-```Java
-public class Main {
-    public static void main(String[] args) {
-        BmiService service = new BmiService();
-        int height = 172;       //Рост в сантиметрах
-        int weight = 100;       //Вес в килограммах
-        int bmi = service.calculate(height, weight);
-        System.out.println("Ваш индекс массы тела равен " + bmi);
-    }
-}
-```
-```Java
-public class BmiService {
-    public int calculate(int height, int weight) {
-        int index = weight * 100 * 100 / (height * height);
-        return (index);
-    }
-}
-```
+# Testability, автотесты, введение в ООП: объекты и методы (Exercise_2.2.2)
+## Домашнее задание по курсу "Java для тестировщиков"
+## Тема: «2.2. Testability, автотесты, введение в ООП: объекты и методы», задание №2: «Индекс Массы Тела»
+- Создано приложение, которое рассчитывает Индекс Массы Тела (Body Mass Index).
+### Предварительные требования
+- На компьютере пользователя должна быть установлена:
+	- Intellij IDEA
+### Установка и запуск
+1. Склонировать проект на свой компьютер
+	- открыть терминал
+	- ввести команду 
+		```
+		git clone https://github.com/Lognestix/Exercise_2.2.2
+		```
+1. Открыть склонированный проект в Intellij IDEA
